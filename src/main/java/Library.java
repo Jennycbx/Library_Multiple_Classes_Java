@@ -1,3 +1,4 @@
+import java.awt.print.Book;
 import java.util.ArrayList;
 
 public class Library {
@@ -22,5 +23,9 @@ public class Library {
         if (this.books.size() < this.capacity) {
             this.books.add(book);
         }
+    }
+
+    public Books removeBook() {
+        return this.books.remove(0);
     }
 }
